@@ -28,7 +28,7 @@ export default function HeroSection() {
       {/* Main Hero Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         {/* Agency Badge */}
-        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#FFFFFF] border border-[#D6D6F0] backdrop-blur-xl mb-8 shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#FFFFFF] backdrop-blur-xl mb-8 shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-700">
           <span className="relative flex h-2.5 w-2.5">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0600FC] opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#0600FC]"></span>
@@ -56,7 +56,7 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-14">
           <button
             onClick={() => handleScrollTo("contact")}
-            className="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-sm sm:text-base text-white bg-[#0600FC] hover:bg-[#0500d4] transition-all duration-300 shadow-[0_4px_20px_rgba(6,0,252,0.35)] hover:shadow-[0_6px_28px_rgba(6,0,252,0.5)] hover:scale-105 active:scale-95 flex items-center justify-center gap-3 group"
+            className="w-full sm:w-auto px-8 py-4 rounded-2xl font-bold text-sm sm:text-base text-white bg-[#0600FC] hover:bg-[#0500d4] transition-all duration-300 shadow-[0_4px_20px_rgba(6,0,252,0.35)] hover:shadow-[0_6px_28px_rgba(6,0,252,0.5)] hover:scale-105 active:scale-95 flex items-center justify-center gap-3 group"
           >
             <span>Start Your Project</span>
             <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" />
@@ -64,7 +64,7 @@ export default function HeroSection() {
 
           <button
             onClick={() => handleScrollTo("services")}
-            className="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-sm sm:text-base text-[#1E1E1E] bg-[#FFFFFF] hover:bg-[#F0F0F6] backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 group shadow-sm"
+            className="w-full sm:w-auto px-8 py-4 rounded-2xl font-semibold text-sm sm:text-base text-[#1E1E1E] bg-[#FFFFFF] hover:bg-[#F0F0F6] backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 group shadow-sm"
           >
             <Sparkles className="w-4 h-4 text-[#0600FC] transition-transform duration-200 group-hover:rotate-12" />
             <span>See Our Work</span>

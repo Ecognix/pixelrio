@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] border border-[#D6D6F0] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-[#0600FC]" />
               Client Testimonials &amp; Impact
             </div>
@@ -123,7 +123,7 @@ export default function TestimonialsSection() {
                   <div className="w-12 h-12 rounded-2xl bg-[#0600FC]/10 border border-[#0600FC]/20 flex items-center justify-center text-[#0600FC]">
                     <Quote className="w-6 h-6" />
                   </div>
-                  <div className="flex items-center gap-1 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+                  <div className="flex items-center gap-1 bg-amber-500/10 px-3 py-1 rounded-full">
                     {[...Array(item.rating)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-amber-500 text-amber-500" />
                     ))}
@@ -133,7 +133,7 @@ export default function TestimonialsSection() {
 
                 {/* Highlight Badge */}
                 <div className="mb-4">
-                  <span className="text-xs font-mono font-bold text-[#0600FC] bg-[#0600FC]/10 px-3 py-1 rounded-full border border-[#0600FC]/20">
+                  <span className="text-xs font-mono font-bold text-[#0600FC] bg-[#0600FC]/10 px-3 py-1 rounded-full">
                     {item.highlight}
                   </span>
                 </div>
@@ -144,7 +144,7 @@ export default function TestimonialsSection() {
                 </p>
 
                 {/* Brand Meta */}
-                <div className="pt-6 border-t border-[#D6D6F0] flex items-center justify-between">
+                <div className="pt-6 flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="w-11 h-11 rounded-2xl bg-[#0600FC]/10 border border-[#0600FC]/20 flex items-center justify-center font-bold text-xs sm:text-sm text-[#0600FC] shrink-0">
                       {item.avatarText}

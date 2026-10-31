@@ -28,8 +28,8 @@ function ClientCard({ client }: { client: ClientItem }) {
         </div>
       </div>
 
-      <div className="pt-3 border-t border-[#D6D6F0] flex items-center justify-between">
-        <span className="text-[11px] font-mono font-semibold text-[#0600FC] bg-[#0600FC]/10 px-2.5 py-0.5 rounded-full border border-[#0600FC]/20">
+      <div className="pt-3 flex items-center justify-between">
+        <span className="text-[11px] font-mono font-semibold text-[#0600FC] bg-[#0600FC]/10 px-2.5 py-0.5 rounded-full">
           {client.growthMetric}
         </span>
         <span className="text-[10px] text-[#6B6B7B] font-mono">
@@ -55,7 +55,7 @@ export default function ClientsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-14">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] border border-[#D6D6F0] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-[#0600FC]" />
               Portfolio &amp; Client Roster
             </div>

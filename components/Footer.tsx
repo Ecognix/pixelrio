@@ -72,7 +72,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#FFFFFF] border-t border-[#D6D6F0] relative overflow-hidden">
+    <footer className="bg-[#FFFFFF] relative overflow-hidden">
       {/* Subtle top glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-[#0600FC]/40 to-transparent" />
 
@@ -151,7 +151,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat on WhatsApp"
-                className="w-9 h-9 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-600 flex items-center justify-center transition-all hover:scale-110 shadow-sm"
+                className="w-9 h-9 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 flex items-center justify-center transition-all hover:scale-110 shadow-sm"
               >
                 <MessageCircle className="w-4 h-4" />
               </a>
@@ -326,7 +326,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-[#D6D6F0] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6B6B7B]">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6B6B7B]">
           <p>© 2026 Pixelrio Studio. All rights reserved. Ulubari, Guwahati, Assam.</p>
 
           <div className="flex items-center gap-6">

@@ -55,7 +55,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "py-3 bg-[#F0F0F6]/90 backdrop-blur-xl border-b border-[#D6D6F0] shadow-[0_4px_20px_-2px_rgba(6,0,252,0.06)]"
+          ? "py-3 bg-[#F0F0F6]/90 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(6,0,252,0.06)]"
           : "py-5 bg-transparent"
       }`}
     >
@@ -105,7 +105,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={(e) => handleScrollTo(e, "#contact")}
-              className="group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-[#0600FC] hover:bg-[#0500d4] transition-all duration-300 shadow-[0_4px_16px_rgba(6,0,252,0.3)] hover:shadow-[0_6px_24px_rgba(6,0,252,0.45)] hover:scale-[1.02] active:scale-[0.98]"
+              className="group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-semibold text-white bg-[#0600FC] hover:bg-[#0500d4] transition-all duration-300 shadow-[0_4px_16px_rgba(6,0,252,0.3)] hover:shadow-[0_6px_24px_rgba(6,0,252,0.45)] hover:scale-[1.02] active:scale-[0.98]"
             >
               <span>Get a Quote</span>
               <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -117,7 +117,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={(e) => handleScrollTo(e, "#contact")}
-              className="text-xs px-3.5 py-1.5 rounded-full font-medium text-white bg-[#0600FC] hover:bg-[#0500d4]"
+              className="text-xs px-3.5 py-1.5 rounded-xl font-medium text-white bg-[#0600FC] hover:bg-[#0500d4]"
             >
               Quote
             </a>
@@ -134,7 +134,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="lg:hidden px-4 pt-3 pb-6 bg-[#FFFFFF]/95 backdrop-blur-2xl border-b border-[#D6D6F0] shadow-xl animate-in slide-in-from-top-4 duration-200">
+        <div className="lg:hidden px-4 pt-3 pb-6 bg-[#FFFFFF]/95 backdrop-blur-2xl shadow-xl animate-in slide-in-from-top-4 duration-200">
           <div className="flex flex-col gap-2">
             {NAV_LINKS.map((link) => (
               <a
@@ -153,7 +153,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={(e) => handleScrollTo(e, "#contact")}
-              className="mt-3 w-full py-3 rounded-xl text-center text-sm font-semibold text-white bg-[#0600FC] hover:bg-[#0500d4] shadow-[0_4px_16px_rgba(6,0,252,0.35)]"
+              className="mt-3 w-full py-3 rounded-2xl text-center text-sm font-semibold text-white bg-[#0600FC] hover:bg-[#0500d4] shadow-[0_4px_16px_rgba(6,0,252,0.35)]"
             >
               Get a Quote Now
             </a>

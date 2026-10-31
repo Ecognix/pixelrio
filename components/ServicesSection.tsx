@@ -108,7 +108,7 @@ function ServiceCard({ service }: { service: ServiceItem }) {
           <div className="w-12 h-12 rounded-2xl bg-[#0600FC]/10 border border-[#0600FC]/20 flex items-center justify-center text-[#0600FC] group-hover:bg-[#0600FC] group-hover:text-white transition-all duration-300 shadow-sm">
             <IconComponent className="w-6 h-6" />
           </div>
-          <span className="text-[11px] font-mono px-3 py-1 rounded-full bg-[#F0F0F6] text-[#6B6B7B] border border-[#D6D6F0] group-hover:border-[#0600FC]/30 group-hover:text-[#0600FC] transition-colors font-semibold">
+          <span className="text-[11px] font-mono px-3 py-1 rounded-full bg-[#F0F0F6] text-[#6B6B7B] group-hover:text-[#0600FC] transition-colors font-semibold">
             {service.tag}
           </span>
         </div>
@@ -135,7 +135,7 @@ function ServiceCard({ service }: { service: ServiceItem }) {
       </div>
 
       {/* Card Footer with Metric & CTA */}
-      <div className="pt-4 border-t border-[#D6D6F0] flex items-center justify-between">
+      <div className="pt-4 flex items-center justify-between">
         {service.stats ? (
           <span className="text-xs font-mono font-semibold text-[#0600FC]">
             {service.stats}
@@ -167,7 +167,7 @@ export default function ServicesSection() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] border border-[#D6D6F0] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-[#0600FC]" />
               Full-Stack Digital Solutions
             </div>

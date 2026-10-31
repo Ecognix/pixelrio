@@ -140,7 +140,7 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] border border-[#D6D6F0] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-[#0600FC]" />
             Let&apos;s Build Together
           </div>
@@ -238,12 +238,12 @@ export default function ContactSection() {
               </div>
 
               {/* Direct WhatsApp CTA Button */}
-              <div className="mt-8 pt-6 border-t border-[#D6D6F0]">
+              <div className="mt-8 pt-6">
                 <a
                   href="https://wa.me/917085885578?text=Hi%20Pixelrio%20Studio,%20I%20would%20like%20to%20discuss%20a%20project."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3.5 px-4 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-700 font-bold text-sm flex items-center justify-center gap-2.5 transition-all hover:scale-[1.01]"
+                  className="w-full py-3.5 px-4 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-700 font-bold text-sm flex items-center justify-center gap-2.5 transition-all hover:scale-[1.01]"
                 >
                   <MessageSquare className="w-4 h-4 text-emerald-600" />
                   <span>Chat Immediately on WhatsApp</span>
@@ -264,7 +264,7 @@ export default function ContactSection() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-full"
               />
-              <div className="absolute bottom-3 left-3 bg-[#FFFFFF]/95 backdrop-blur-md px-3 py-1.5 rounded-xl border border-[#D6D6F0] text-[11px] font-mono text-[#1E1E1E] flex items-center gap-2 shadow-sm">
+              <div className="absolute bottom-3 left-3 bg-[#FFFFFF]/95 backdrop-blur-md px-3 py-1.5 rounded-xl text-[11px] font-mono text-[#1E1E1E] flex items-center gap-2 shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-[#0600FC] animate-ping" />
                 Ulubari, Guwahati, Assam
               </div>
@@ -287,23 +287,20 @@ export default function ContactSection() {
                   </p>
                   <button
                     onClick={handleReset}
-                    className="px-6 py-3 rounded-full text-sm font-bold text-[#1E1E1E] bg-[#F0F0F6] hover:bg-[#D6D6F0] transition-all"
+                    className="px-6 py-3 rounded-2xl text-sm font-bold text-[#1E1E1E] bg-[#F0F0F6] hover:bg-[#D6D6F0] transition-all"
                   >
                     Submit Another Inquiry
                   </button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} noValidate className="space-y-6">
-                  <div className="flex items-center justify-between pb-4 border-b border-[#D6D6F0]">
+                  <div className="flex items-center justify-between pb-4">
                     <div>
                       <h3 className="text-xl font-bold text-[#1E1E1E]">Start Your Project</h3>
                       <p className="text-xs text-[#6B6B7B] mt-0.5">
                         Fill out the details below to receive a customized growth roadmap.
                       </p>
                     </div>
-                    <span className="text-xs font-mono text-[#0600FC] bg-[#0600FC]/10 px-3 py-1 rounded-full border border-[#0600FC]/20 font-semibold">
-                      24h Response
-                    </span>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -320,10 +317,10 @@ export default function ContactSection() {
                           setFormData({ ...formData, name: e.target.value });
                           if (errors.name) setErrors({ ...errors, name: "" });
                         }}
-                        className={`w-full px-4 py-3.5 rounded-2xl bg-[#F0F0F6] border text-[#1E1E1E] text-sm placeholder:text-[#6B6B7B] focus:outline-none focus:bg-[#FFFFFF] transition-all ${
+                        className={`w-full px-4 py-3.5 rounded-2xl bg-[#F0F0F6] border border-transparent text-[#1E1E1E] text-sm placeholder:text-[#6B6B7B] focus:outline-none focus:bg-[#FFFFFF] transition-all ${
                           errors.name
                             ? "border-red-500 focus:border-red-500"
-                            : "border-[#D6D6F0] focus:border-[#0600FC] focus:shadow-[0_0_15px_rgba(6,0,252,0.15)]"
+                            : "focus:border-[#0600FC] focus:shadow-[0_0_15px_rgba(6,0,252,0.15)]"
                         }`}
                       />
                       {errors.name && (
@@ -344,10 +341,10 @@ export default function ContactSection() {
                           setFormData({ ...formData, email: e.target.value });
                           if (errors.email) setErrors({ ...errors, email: "" });
                         }}
-                        className={`w-full px-4 py-3.5 rounded-2xl bg-[#F0F0F6] border text-[#1E1E1E] text-sm placeholder:text-[#6B6B7B] focus:outline-none focus:bg-[#FFFFFF] transition-all ${
+                        className={`w-full px-4 py-3.5 rounded-2xl bg-[#F0F0F6] border border-transparent text-[#1E1E1E] text-sm placeholder:text-[#6B6B7B] focus:outline-none focus:bg-[#FFFFFF] transition-all ${
                           errors.email
                             ? "border-red-500 focus:border-red-500"
-                            : "border-[#D6D6F0] focus:border-[#0600FC] focus:shadow-[0_0_15px_rgba(6,0,252,0.15)]"
+                            : "focus:border-[#0600FC] focus:shadow-[0_0_15px_rgba(6,0,252,0.15)]"
                         }`}
                       />
                       {errors.email && (
@@ -370,10 +367,10 @@ export default function ContactSection() {
                           setFormData({ ...formData, phone: e.target.value });
                           if (errors.phone) setErrors({ ...errors, phone: "" });
                         }}
-                        className={`w-full px-4 py-3.5 rounded-2xl bg-[#F0F0F6] border text-[#1E1E1E] text-sm placeholder:text-[#6B6B7B] focus:outline-none focus:bg-[#FFFFFF] transition-all ${
+                        className={`w-full px-4 py-3.5 rounded-2xl bg-[#F0F0F6] border border-transparent text-[#1E1E1E] text-sm placeholder:text-[#6B6B7B] focus:outline-none focus:bg-[#FFFFFF] transition-all ${
                           errors.phone
                             ? "border-red-500 focus:border-red-500"
-                            : "border-[#D6D6F0] focus:border-[#0600FC] focus:shadow-[0_0_15px_rgba(6,0,252,0.15)]"
+                            : "focus:border-[#0600FC] focus:shadow-[0_0_15px_rgba(6,0,252,0.15)]"
                         }`}
                       />
                       {errors.phone && (
@@ -392,7 +389,7 @@ export default function ContactSection() {
                         onChange={(e) =>
                           setFormData({ ...formData, service: e.target.value })
                         }
-                        className="w-full px-4 py-3.5 rounded-2xl bg-[#F0F0F6] border border-[#D6D6F0] text-[#1E1E1E] text-sm focus:outline-none focus:bg-[#FFFFFF] focus:border-[#0600FC] transition-all cursor-pointer"
+                        className="w-full px-4 py-3.5 rounded-2xl bg-[#F0F0F6] border border-transparent text-[#1E1E1E] text-sm focus:outline-none focus:bg-[#FFFFFF] focus:border-[#0600FC] transition-all cursor-pointer"
                       >
                         <optgroup label="Growth Plans">
                           <option value="Starter Plan (₹9,900/mo)">Starter Plan (₹9,900/mo)</option>
@@ -424,10 +421,10 @@ export default function ContactSection() {
                         setFormData({ ...formData, message: e.target.value });
                         if (errors.message) setErrors({ ...errors, message: "" });
                       }}
-                      className={`w-full px-4 py-3.5 rounded-2xl bg-[#F0F0F6] border text-[#1E1E1E] text-sm placeholder:text-[#6B6B7B] focus:outline-none focus:bg-[#FFFFFF] transition-all resize-none ${
+                      className={`w-full px-4 py-3.5 rounded-2xl bg-[#F0F0F6] border border-transparent text-[#1E1E1E] text-sm placeholder:text-[#6B6B7B] focus:outline-none focus:bg-[#FFFFFF] transition-all resize-none ${
                         errors.message
                           ? "border-red-500 focus:border-red-500"
-                          : "border-[#D6D6F0] focus:border-[#0600FC] focus:shadow-[0_0_15px_rgba(6,0,252,0.15)]"
+                          : "focus:border-[#0600FC] focus:shadow-[0_0_15px_rgba(6,0,252,0.15)]"
                       }`}
                     />
                     {errors.message && (
@@ -439,7 +436,7 @@ export default function ContactSection() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-4 rounded-full font-bold text-sm sm:text-base text-white bg-[#0600FC] hover:bg-[#0500d4] transition-all duration-300 shadow-[0_4px_20px_rgba(6,0,252,0.35)] hover:shadow-[0_6px_28px_rgba(6,0,252,0.5)] hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed group"
+                    className="w-full py-4 rounded-2xl font-bold text-sm sm:text-base text-white bg-[#0600FC] hover:bg-[#0500d4] transition-all duration-300 shadow-[0_4px_20px_rgba(6,0,252,0.35)] hover:shadow-[0_6px_28px_rgba(6,0,252,0.5)] hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed group"
                   >
                     {isSubmitting ? (
                       <div className="flex items-center gap-2">

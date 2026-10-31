@@ -28,7 +28,7 @@ function TeamCard({ member }: { member: TeamMember }) {
             />
           </div>
           <div className="absolute top-6 right-6">
-            <span className="text-[11px] font-mono px-3 py-1 rounded-full bg-[#FFFFFF]/95 backdrop-blur-md text-[#0600FC] border border-[#D6D6F0] font-semibold shadow-sm">
+            <span className="text-[11px] font-mono px-3 py-1 rounded-full bg-[#FFFFFF]/95 backdrop-blur-md text-[#0600FC] font-semibold shadow-sm">
               {member.experience}
             </span>
           </div>
@@ -51,7 +51,7 @@ function TeamCard({ member }: { member: TeamMember }) {
             {member.skills.map((skill, idx) => (
               <span
                 key={idx}
-                className="text-[10px] font-medium px-2.5 py-1 rounded-lg bg-[#F0F0F6] text-[#6B6B7B] border border-[#D6D6F0]"
+                className="text-[10px] font-medium px-2.5 py-1 rounded-lg bg-[#F0F0F6] text-[#6B6B7B]"
               >
                 {skill}
               </span>
@@ -60,7 +60,7 @@ function TeamCard({ member }: { member: TeamMember }) {
         </div>
       </div>
 
-      <div className="px-6 py-3.5 border-t border-[#D6D6F0] bg-[#FFFFFF] flex items-center justify-between text-xs text-[#6B6B7B]">
+      <div className="px-6 py-3.5 bg-[#FFFFFF] flex items-center justify-between text-xs text-[#6B6B7B]">
         <span className="flex items-center gap-1.5 font-medium">
           <CheckCircle className="w-3.5 h-3.5 text-[#0600FC]" />
           Founding Member • Guwahati
@@ -107,7 +107,7 @@ export default function TeamSection() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] border border-[#D6D6F0] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-[#0600FC]" />
               Founding Leadership
             </div>

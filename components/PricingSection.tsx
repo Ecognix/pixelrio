@@ -96,7 +96,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
           </div>
 
           {/* Pricing Block */}
-          <div className="mb-6 pb-6 border-b border-[#D6D6F0]">
+          <div className="mb-6 pb-6">
             <div className="flex items-baseline gap-1.5 flex-wrap">
               <span className="text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-black text-[#1E1E1E] tracking-tight">
                 {plan.price}
@@ -142,7 +142,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
         <div className="pt-2">
           <button
             onClick={handleSelectPlan}
-            className={`w-full py-3.5 px-5 rounded-full font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all duration-300 group ${
+            className={`w-full py-3.5 px-5 rounded-2xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all duration-300 group ${
               isGrowth
                 ? "bg-[#0600FC] text-white hover:bg-[#0500d4] shadow-[0_4px_18px_rgba(6,0,252,0.35)] hover:shadow-[0_6px_24px_rgba(6,0,252,0.5)] hover:scale-[1.01]"
                 : "bg-[#F0F0F6] text-[#1E1E1E] hover:bg-[#0600FC] hover:text-white shadow-sm hover:scale-[1.01]"
@@ -167,7 +167,7 @@ export default function PricingSection() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] border border-[#D6D6F0] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
               <Zap className="w-3.5 h-3.5 text-[#0600FC]" />
               Transparent Pricing
             </div>

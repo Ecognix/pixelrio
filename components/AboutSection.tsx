@@ -143,7 +143,7 @@ function TiltCard({
           <div className="w-14 h-14 rounded-2xl bg-[#F0F0F6] flex items-center justify-center text-[#0600FC] shadow-sm">
             {icon}
           </div>
-          <span className="text-xs font-mono px-3 py-1 rounded-full bg-[#0600FC]/10 text-[#0600FC] border border-[#0600FC]/20 font-semibold">
+          <span className="text-xs font-mono px-3 py-1 rounded-full bg-[#0600FC]/10 text-[#0600FC] font-semibold">
             {badge}
           </span>
         </div>
@@ -155,7 +155,7 @@ function TiltCard({
         <p className="text-[#6B6B7B] text-sm leading-relaxed">{description}</p>
       </div>
 
-      <div className="mt-8 pt-4 border-t border-[#D6D6F0] flex items-center gap-2">
+      <div className="mt-8 pt-4 flex items-center gap-2">
         <div className="w-2 h-2 rounded-full bg-[#0600FC]" />
         <span className="text-xs text-[#6B6B7B] font-medium">Core Agency Pillar</span>
       </div>
@@ -175,7 +175,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-16 sm:mb-20">
           {/* Left Text Column */}
           <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] border border-[#D6D6F0] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-[#0600FC]" />
               About Pixelrio Studio
             </div>
@@ -195,7 +195,7 @@ export default function AboutSection() {
               
               {/* Card Header */}
               <div className="flex items-center justify-between z-10 pointer-events-none">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F0F0F6] border border-[#D6D6F0] text-[11px] font-mono text-[#0600FC] font-semibold">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F0F0F6] text-[11px] font-mono text-[#0600FC] font-semibold">
                   <span className="w-2 h-2 rounded-full bg-[#0600FC] animate-ping" />
                   <span>3D Kinetic Core</span>
                 </div>
@@ -210,7 +210,7 @@ export default function AboutSection() {
               </div>
 
               {/* Card Footer */}
-              <div className="z-10 mt-auto flex items-center justify-between text-xs text-[#6B6B7B] pointer-events-none pt-2.5 border-t border-[#D6D6F0]/60 bg-white/60 backdrop-blur-xs rounded-xl px-2">
+              <div className="z-10 mt-auto flex items-center justify-between text-xs text-[#6B6B7B] pointer-events-none pt-2.5 bg-white/60 backdrop-blur-xs rounded-xl px-2">
                 <span className="font-semibold text-[#1E1E1E]">Precision Kinetic Geometry</span>
                 <span className="font-mono text-[10px] text-[#0600FC] font-bold">WebGL • 60 FPS</span>
               </div>

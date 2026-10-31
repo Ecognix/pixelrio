@@ -39,9 +39,9 @@ export const plansData: PricingPlan[] = [
     features: [
       "Social media management",
       "2 social media platforms managed",
-      "2 creatives every month",
-      "2 videos every month",
-      "2 motion graphic videos every month",
+      "8 creatives every month",
+      "8 videos every month",
+      "4 motion graphic videos every month",
       "Ads campaign management",
       "Search engine optimization (SEO)",
     ],

@@ -45,7 +45,7 @@ Built with **Next.js 16 (App Router, TypeScript)**, **Tailwind CSS v4**, **Three
    - Distinct **Electric Blue Pixel** cube (`#2b2bff`) with glowing emissive core and point light
    - Scroll dispersal effect: as the user scrolls, the cubes spread out and float downward into the next section
    - Headline: *"We Turn Brands Into Growth Stories."*
-   - Sub-line: *"SEO, social media, ads, web and video, all under one roof."*
+   - Sub-line: *"Digital marketing, social media management, branding, and web or app development—all under one roof."*
    - Action buttons: *"Start Your Project"* and *"See Our Work"*.
    - Lightweight 2D/SVG fallback for devices with `prefers-reduced-motion` or without WebGL.
 
@@ -57,25 +57,9 @@ Built with **Next.js 16 (App Router, TypeScript)**, **Tailwind CSS v4**, **Three
    - Verified story copy highlighting Pixelrio Studio's Guwahati roots and North East vision
    - Three 3D tilt-on-hover cards: **Mission**, **Vision**, and **Values** (creativity, honesty, results).
 
-4. **Section 3: Services (16 Capabilities)**:
+4. **Section 3: Services (4 Core Offerings)**:
    - Interactive grid of 3D tilt cards with icons, 2-line descriptions, deliverables, and metric badges
-   - All 16 required services configured in `data/services.ts`:
-     1. Search Engine Optimization (SEO) & Local SEO
-     2. Social Media Management
-     3. Paid Ads (Meta and Google Ads)
-     4. Website Design and Development
-     5. E-commerce Development
-     6. UI/UX Design
-     7. Branding and Logo Design
-     8. Graphic Design
-     9. Video Production and Video Editing
-     10. Content Marketing and Copywriting
-     11. Email and WhatsApp Marketing
-     12. Influencer Marketing
-     13. Online Reputation Management
-     14. Google Business Profile Management
-     15. Analytics and Performance Reporting
-     16. Mobile App Development
+   - Digital Marketing, Social Media Management, Branding, and Web / App Development are configured in `data/services.ts`.
    - "Inquire" button on each card that smoothly scrolls to the contact form and automatically preselects that service.
 
 5. **Section 4: Clients (20 Brands)**:
@@ -147,15 +131,7 @@ All content has been organized into modular data files so you can easily customi
 ### 1. Services (`data/services.ts`)
 To modify or add a service, edit the array in `data/services.ts`:
 \`\`\`typescript
-{
-  id: "seo-local-seo",
-  title: "Search Engine Optimization (SEO) & Local SEO",
-  shortDesc: "Dominate Google search results and Google Maps pack in Guwahati...",
-  iconName: "Search",
-  tag: "High ROI",
-  stats: "+240% Organic Traffic",
-  deliverables: ["Local 3-Pack Optimization", "Technical SEO Audits", ...]
-}
+The four core offerings are Digital Marketing, Social Media Management, Branding, and Web / App Development.
 \`\`\`
 
 ### 2. Clients (`data/clients.ts`)

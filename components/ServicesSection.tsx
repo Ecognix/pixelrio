@@ -3,44 +3,22 @@
 import React, { useRef, useState } from "react";
 import { servicesData, ServiceItem } from "@/data/services";
 import {
-  Search,
   Share2,
   TrendingUp,
   Code2,
-  ShoppingBag,
-  Layout,
-  Sparkles,
   Palette,
-  Film,
-  PenTool,
-  Mail,
-  Megaphone,
-  ShieldCheck,
-  MapPin,
-  BarChart3,
-  Smartphone,
+  Sparkles,
   ArrowUpRight,
   CheckCircle2,
 } from "lucide-react";
 
 // Icon dictionary map for 100% static bundler safety
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
-  Search,
   Share2,
   TrendingUp,
   Code2,
-  ShoppingBag,
-  Layout,
-  Sparkles,
   Palette,
-  Film,
-  PenTool,
-  Mail,
-  Megaphone,
-  ShieldCheck,
-  MapPin,
-  BarChart3,
-  Smartphone,
+  Sparkles,
 };
 
 function ServiceCard({ service }: { service: ServiceItem }) {
@@ -169,22 +147,22 @@ export default function ServicesSection() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFFFF] text-xs font-mono uppercase tracking-wider text-[#0600FC] font-semibold mb-4 shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-[#0600FC]" />
-              Full-Stack Digital Solutions
+              What We Do
             </div>
             <h2 className="text-3xl sm:text-5xl font-black text-[#1E1E1E] tracking-tight">
-              Full-Stack Capabilities. <br className="hidden sm:inline" />
+              Four Ways to Grow. <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E1E1E] via-[#0600FC] to-[#0600FC]">
                 One Growth Partner.
               </span>
             </h2>
           </div>
           <p className="text-sm sm:text-base text-[#6B6B7B] max-w-md">
-            From dominating local Google maps in Guwahati to multi-million rupee performance ad funnels and cinematic video campaigns.
+            Digital marketing, social media management, branding, and web or app development—all under one roof.
           </p>
         </div>
 
-        {/* 16 Services Grid with 3D Tilt Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Four core services */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {servicesData.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}

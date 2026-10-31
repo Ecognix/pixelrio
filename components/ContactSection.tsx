@@ -20,7 +20,7 @@ export default function ContactSection() {
     name: "",
     email: "",
     phone: "",
-    service: "Search Engine Optimization (SEO) & Local SEO",
+    service: "Digital Marketing",
     message: "",
   });
 
@@ -124,7 +124,7 @@ export default function ContactSection() {
       name: "",
       email: "",
       phone: "",
-      service: "Search Engine Optimization (SEO) & Local SEO",
+      service: "Digital Marketing",
       message: "",
     });
     setErrors({});

@@ -242,7 +242,7 @@ export default function Footer() {
                   onClick={(e) => handleScrollTo(e, "#services")}
                   className="hover:text-[#0600FC] transition-colors"
                 >
-                  Search Engine Optimization
+                  Digital Marketing
                 </a>
               </li>
               <li>
@@ -251,7 +251,7 @@ export default function Footer() {
                   onClick={(e) => handleScrollTo(e, "#services")}
                   className="hover:text-[#0600FC] transition-colors"
                 >
-                  Meta &amp; Google Ads (PPC)
+                  Social Media Management
                 </a>
               </li>
               <li>
@@ -260,7 +260,7 @@ export default function Footer() {
                   onClick={(e) => handleScrollTo(e, "#services")}
                   className="hover:text-[#0600FC] transition-colors"
                 >
-                  Next.js Website Development
+                  Branding
                 </a>
               </li>
               <li>
@@ -269,25 +269,7 @@ export default function Footer() {
                   onClick={(e) => handleScrollTo(e, "#services")}
                   className="hover:text-[#0600FC] transition-colors"
                 >
-                  Social Media Strategy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#services"
-                  onClick={(e) => handleScrollTo(e, "#services")}
-                  className="hover:text-[#0600FC] transition-colors"
-                >
-                  Video Production &amp; Reels
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#services"
-                  onClick={(e) => handleScrollTo(e, "#services")}
-                  className="hover:text-[#0600FC] transition-colors"
-                >
-                  Google Business Profile
+                  Web / App Development
                 </a>
               </li>
             </ul>

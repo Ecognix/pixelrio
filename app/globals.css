@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F0F0F6;
+  --foreground: #1E1E1E;
+  --primary: #0600FC;
+  --primary-hover: #0500d4;
+  --primary-light: rgba(6, 0, 252, 0.08);
+  --primary-glow: rgba(6, 0, 252, 0.25);
+  --card: #FFFFFF;
+  --card-surface: #FFFFFF;
+  --border: #D6D6F0;
+  --border-hover: #0600FC;
+  --muted: #6B6B7B;
+  --muted-light: #8E8EA0;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-brand-blue: #0600FC;
+  --color-brand-blue-hover: #0500d4;
+  --color-dark-bg: #F0F0F6;
+  --color-dark-surface: #FFFFFF;
+  --color-dark-elevated: #F8F8FC;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  color: var(--foreground);
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), sans-serif;
+}
+
+/* Custom soft lavender / electric blue ambient gradient */
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 20%, rgba(6, 0, 252, 0.08) 0%, rgba(240, 240, 246, 0) 70%);
+}
+
+.bg-radial-hero {
+  background: radial-gradient(circle at 50% 30%, rgba(6, 0, 252, 0.09) 0%, rgba(214, 214, 240, 0.3) 40%, rgba(240, 240, 246, 0) 75%);
+}
+
+.glass-card {
+  background: var(--card);
+  border: 0;
+  box-shadow: 0 4px 20px -2px rgba(6, 0, 252, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  box-shadow: 0 12px 32px -4px rgba(6, 0, 252, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+}
+
+.glass-nav {
+  background: rgba(240, 240, 246, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Text Selection */
+::selection {
+  background: var(--primary);
+  color: #FFFFFF;
+}
+
+/* Subtle grid line background */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(6, 0, 252, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(6, 0, 252, 0.04) 1px, transparent 1px);
+}
+
+/* Infinite Marquee */
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-scroll-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll-reverse 36s linear infinite;
+}
+
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* Soft shadow animation for blue pixel */
+@keyframes pulse-pixel {
+  0%, 100% {
+    box-shadow: 0 4px 14px rgba(6, 0, 252, 0.4), 0 0 20px rgba(6, 0, 252, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 6px 20px rgba(6, 0, 252, 0.55), 0 0 30px rgba(6, 0, 252, 0.3);
+    transform: scale(1.05);
+  }
+}
+
+.animate-pixel-glow {
+  animation: pulse-pixel 3s ease-in-out infinite;
+}
